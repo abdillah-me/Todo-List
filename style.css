@@ -1,0 +1,19 @@
+* {
+   font-family: "Poppins", sans-serif;
+}
+
+body {
+   background-color: #111d4a !important;
+}
+
+.container-todo {
+   background-color: #283a7e !important;
+   padding: 1.2rem;
+   margin-bottom: 30px;
+   border-radius: 15px;
+}
+
+.btn-primary {
+   background-color: #000c36 !important;
+   border: 1px solid white !important;
+}
