@@ -11,7 +11,7 @@
          rel="stylesheet"
       />
       <link rel="stylesheet" href="style.css" />
-      <title>Bootstrap demo</title>
+      <title>Todo List | Abdillah</title>
       <link
          href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
          rel="stylesheet"
@@ -22,19 +22,30 @@
    <body>
       <div class="container text-center mt-3 mb-3">
          <h1 class="header fw-bold text-light">Todo List 📝</h1>
-         <div class="input-group mb-3">
-            <input
-               type="text"
-               class="form-control input-keyword searchbar"
-               placeholder="Search Todo"
-               aria-label="Recipient's username"
-               aria-describedby="button-addon2"
-            />
-            <button class="btn btn-primary search-button" type="button" id="button-addon2">
-               search
-            </button>
+         <div class="container d-flex justify-content-between mt-3">
+            <div class="input-group mb-3 me-md-3 me-2">
+               <input
+                  type="text"
+                  class="form-control input-keyword searchbar"
+                  placeholder="Search Todo"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+               />
+               <button class="btn btn-primary search-button" type="button" id="button-addon2">
+                  search
+               </button>
+            </div>
+            <select class="form-select text-light">
+               <option value="10" selected>Select Range</option>
+               <option value="20">20</option>
+               <option value="30">30</option>
+               <option value="40">40</option>
+               <option value="50">50</option>
+               <option value="200">ALL</option>
+            </select>
          </div>
       </div>
+
       <div class="container">
          <div class="container-todo">
             <div id="todoList" class="row"></div>

@@ -26,6 +26,11 @@ searchbar.addEventListener("keyup", (e) => {
 let viewPerPage = 10;
 let curentPage = 1;
 
+document.querySelector(".form-select").addEventListener("change", (e) => {
+   viewPerPage = e.target.value;
+   loadDataTodo();
+});
+
 const displayDataTodo = (todoList) => {
    const htmlString = todoList
       .filter((data, index) => {
